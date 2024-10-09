@@ -1,0 +1,28 @@
+[
+  {
+    "name": "aws",
+    "posts": [
+      {
+        "title": "Test 1",
+        "slug": "test-1"
+      },
+      {
+        "title": "Test 2",
+        "slug": "test-2"
+      }
+    ]
+  },
+  {
+    "name": "java",
+    "posts": [
+      {
+        "title": "Test 3",
+        "slug": "test-3"
+      },
+      {
+        "title": "Test 4",
+        "slug": "test-4"
+      }
+    ]
+  }
+]

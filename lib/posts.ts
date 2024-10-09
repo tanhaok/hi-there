@@ -5,6 +5,7 @@ import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
 import { PostData } from "./type";
+import MappingData from "../posts/config.json";
 
 const postsDirectory = path.join(process.cwd(), "posts");
 
@@ -34,4 +35,13 @@ export async function getPostDataWithContent(id: string): Promise<PostData> {
     date: matterResult.data.date,
     contentHtml,
   };
+}
+
+export function getSupportedCategory(): string[] {
+  const categories: string[] = [];
+  MappingData.forEach((data) => {
+    categories.push(data.name);
+  });
+
+  return categories
 }
