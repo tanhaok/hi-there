@@ -12,7 +12,9 @@ interface Params {
 export async function generateStaticParams(): Promise<Params[]> {
   const paths = getAllPostIds();
   return paths.map((path) => ({
-    id: path.params.id, 
+    params: {
+      id: path.params.id
+    }
   }));
 }
 
