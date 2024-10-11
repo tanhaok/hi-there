@@ -1,7 +1,9 @@
 ---
-title: this is test 1
-contributor: haokok
-category: java
+title: The Introduction of Java
+description: Java is one of the most popular programming languages in the world, known for its versatility, efficiency, and platform independence. Used by millions of developers globally, Java powers everything from mobile applications to large-scale enterprise systems.
+date: '2024-11-11'
+authors:
+    - Hal Nguyen
 ---
 
 ## **Introduction to Java: Understanding the Basics and Core Concepts**
@@ -40,10 +42,10 @@ public class HelloWorld {
 
 Java is an object-oriented language, which means it relies on the concept of “objects” to represent data and behavior. The four main principles of OOP are:
 
-   - **Encapsulation**: Wrapping data (attributes) and methods (functions) into a single unit, called a class.
-   - **Inheritance**: Creating new classes that are based on existing classes, enabling code reusability.
-   - **Polymorphism**: Allowing objects to take on multiple forms depending on the context, making it easier to extend the functionality.
-   - **Abstraction**: Hiding complex implementation details and showing only the essential features of an object.
+- **Encapsulation**: Wrapping data (attributes) and methods (functions) into a single unit, called a class.
+- **Inheritance**: Creating new classes that are based on existing classes, enabling code reusability.
+- **Polymorphism**: Allowing objects to take on multiple forms depending on the context, making it easier to extend the functionality.
+- **Abstraction**: Hiding complex implementation details and showing only the essential features of an object.
 
 #### **3. Java Classes and Objects**
 
