@@ -1,20 +1,26 @@
-'use client'
+"use client";
 import * as React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider, PaletteMode } from "@mui/material/styles";
-import MainContent from "@components/MainContent";
 import Latest from "@components/Latest";
 import Footer from "@components/Footer";
 import TemplateFrame from "./TemplateFrame";
-
+import { Metadata } from '@/lib/type';
 import getBlogTheme from "@theme/getBlogTheme";
 
-export default function Blog({supportedCategory}: {supportedCategory: string[]}) {
+export default function Blog({
+  supportedCategory,
+  blogMetaData,
+}: {
+  supportedCategory: string[];
+  blogMetaData: Metadata[];
+}) {
   const [mode, setMode] = React.useState<PaletteMode>("light");
   const [showCustomTheme, setShowCustomTheme] = React.useState(true);
   const blogTheme = createTheme(getBlogTheme(mode));
   const defaultTheme = createTheme({ palette: { mode } });
+
   // This code only runs on the client side, to determine the system color preference
   React.useEffect(() => {
     // Check if there is a preferred mode in localStorage
@@ -55,8 +61,8 @@ export default function Blog({supportedCategory}: {supportedCategory: string[]})
           component="main"
           sx={{ display: "flex", flexDirection: "column", my: 16, gap: 4 }}
         >
-          <MainContent />
-          <Latest />
+          {/* <MainContent /> */}
+          <Latest blogMetaData={blogMetaData}/>
         </Container>
         <Footer />
       </ThemeProvider>
