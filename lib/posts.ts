@@ -39,7 +39,8 @@ export async function getPostDataWithContent(
 
   const processedContent = await remark()
     .use(html)
-    .process(matterResult.content);
+    .process(matterResult.content)
+
   const contentHtml = processedContent.toString();
 
   return {

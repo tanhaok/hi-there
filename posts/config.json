@@ -7,5 +7,45 @@
         "slug": "introduction-to-java"
       }
     ]
+  },
+  {
+    "name": "aws",
+    "posts": [
+      {
+        "title": "Introduction to AWS: Understanding the Basics and Core Concepts",
+        "slug": "introduction-to-aws"
+      }
+    ]
+  },
+  {
+    "name": "rust",
+    "posts": [
+      {
+        "title": "Introducing Rust - A Systems Programming Language",
+        "slug": "introduction-to-rust"
+      },
+      {
+        "title": "A Deeper Dive into Rust Beyond the Basics",
+        "slug": "introduction-to-rust-part-2"
+      }
+    ]
+  },
+  {
+    "name": "go",
+    "posts": [
+      {
+        "title": "A Beginner's Guide to Go: Essential Concepts",
+        "slug": "introduction-to-go"
+      }
+    ]
+  },
+  {
+    "name": "python",
+    "posts": [
+      {
+        "title": "A Beginner's Guide to Python: Essential Concepts",
+        "slug": "introduction-to-python"
+      }
+    ]
   }
 ]
