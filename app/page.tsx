@@ -1,12 +1,7 @@
-import { getMetadata, getSupportedCategory } from "@/lib/posts";
-import Blog from "./blog";
-
-
+import { getMetadata } from "@/lib/posts";
+import Latest from "@components/Latest";
 
 export default function Home() {
-  const supportedCategory = getSupportedCategory();
   const blogMetaData = getMetadata();
-  return (
-    <Blog supportedCategory={supportedCategory} blogMetaData = {blogMetaData} />    
-  );
+  return <Latest blogMetaData={blogMetaData} />;
 }
