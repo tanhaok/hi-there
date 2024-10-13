@@ -4,7 +4,8 @@
     "posts": [
       {
         "title": "Introduction to Java: Understanding the Basics and Core Concepts",
-        "slug": "introduction-to-java"
+        "slug": "introduction-to-java",
+        "tags": ["java", "programming"]
       }
     ]
   },
@@ -13,7 +14,8 @@
     "posts": [
       {
         "title": "Introduction to AWS: Understanding the Basics and Core Concepts",
-        "slug": "introduction-to-aws"
+        "slug": "introduction-to-aws",
+        "tags": ["aws", "cloud", "devops"]
       }
     ]
   },
@@ -22,11 +24,13 @@
     "posts": [
       {
         "title": "Introducing Rust - A Systems Programming Language",
-        "slug": "introduction-to-rust"
+        "slug": "introduction-to-rust",
+        "tags": ["rust", "programming", "systems-programming"]
       },
       {
         "title": "A Deeper Dive into Rust Beyond the Basics",
-        "slug": "introduction-to-rust-part-2"
+        "slug": "introduction-to-rust-part-2",
+        "tags": ["rust", "programming", "systems-programming"]
       }
     ]
   },
@@ -35,7 +39,8 @@
     "posts": [
       {
         "title": "A Beginner's Guide to Go: Essential Concepts",
-        "slug": "introduction-to-go"
+        "slug": "introduction-to-go",
+        "tags": ["go", "programming"]
       }
     ]
   },
@@ -44,7 +49,8 @@
     "posts": [
       {
         "title": "A Beginner's Guide to Python: Essential Concepts",
-        "slug": "introduction-to-python"
+        "slug": "introduction-to-python",
+        "tags": ["python", "programming"]
       }
     ]
   }
