@@ -7,17 +7,6 @@ export interface PostData {
   author: string[];
 }
 
-// interface MappingData {
-//   title: string;
-//   slug: string;
-// }
-
-// export interface Metadata {
-//   category: string;
-//   mappingData: MappingData[];
-// }
-
-
 export interface Params {
   params: {
     category: string;

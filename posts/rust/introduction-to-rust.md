@@ -6,8 +6,6 @@ authors:
     - Hal Nguyen
 ---
 
-## Introducing Rust: A Systems Programming Language
-
 **What is Rust?**
 
 Rust is a modern systems programming language that combines performance, safety, and expressiveness. It's designed to be a safer alternative to languages like C and C++ while maintaining their efficiency. Rust's unique features make it a popular choice for building high-performance applications, operating systems, and embedded systems.

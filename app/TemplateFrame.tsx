@@ -30,17 +30,11 @@ const StyledAppBar = styled(AppBar)(({ theme }) => ({
 }));
 
 interface TemplateFrameProps {
-  // showCustomTheme: boolean;
-  // toggleCustomTheme: (theme: boolean) => void;
-  // mode: PaletteMode;
-  // toggleColorMode: () => void;
   supportedCategory: string[];
   children: React.ReactNode;
 }
 
 export default function TemplateFrame({
-  // mode,
-  // toggleColorMode,
   supportedCategory,
   children,
 }: TemplateFrameProps) {
@@ -100,7 +94,7 @@ export default function TemplateFrame({
                   variant="text"
                   color="info"
                   size="small"
-                  href={`/${category}`}
+                  href={`/blogs/${category}`}
                   component="a"
                   key={`${index}-${category}`}
                 >

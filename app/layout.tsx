@@ -5,6 +5,7 @@ import Container from "@mui/material/Container";
 import Footer from "@components/Footer";
 import TemplateFrame from "./TemplateFrame";
 import { getSupportedCategory } from "@/lib/posts";
+import "./styles.css";
 
 const inter = localFont({
   src: "./fonts/Inter_28pt-Thin.ttf",

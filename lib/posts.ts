@@ -39,7 +39,7 @@ export async function getPostDataWithContent(
 
   const processedContent = await remark()
     .use(html)
-    .process(matterResult.content)
+    .process(matterResult.content);
 
   const contentHtml = processedContent.toString();
 
@@ -52,33 +52,40 @@ export async function getPostDataWithContent(
   };
 }
 
-export const getMetadata = (): Metadata[] => {
+export const getMetadata = (category: string | null): Metadata[] => {
   const results: Metadata[] = [];
-  MappingData.forEach((data) => {
-    data.posts.forEach((post) => {
-      const fileContent = getFileContent(data.name, post.slug);
+  let data = [...MappingData];
+  if (category) {
+    data = data.filter((ob) => ob.name === category);
+  }
+  data.forEach((object) => {
+    object.posts.forEach((post) => {
+      const fileContent = getFileContent(object.name, post.slug);
       const matterResult = matter(fileContent);
       results.push({
         title: post.title,
         description: matterResult.data.description,
         slug: post.slug,
-        tag: data.name,
+        tag: object.name,
         date: matterResult.data.date,
         authors: matterResult.data.authors,
       });
     });
   });
+
+  // Sort posts by date
+  results.sort((a, b) => b.date.localeCompare(a.date));
   return results;
 };
 
-export function getPostTitle(category: string, slug: string): string {
+export function getPostTitle(category: string, slug: string): string[] {
   const associatedPost = MappingData.find(
     (data) => data.name === category
   )?.posts.find((post) => post.slug === slug);
   if (associatedPost) {
-    return associatedPost.title;
+    return [associatedPost.title, associatedPost.tags.join(",")];
   }
-  return "Hi There";
+  return ["Hi There", "A blog post about common topic in web development"];
 }
 
 export function getSupportedCategory(): string[] {
