@@ -16,6 +16,21 @@
         "title": "Introduction to AWS: Understanding the Basics and Core Concepts",
         "slug": "introduction-to-aws",
         "tags": ["aws", "cloud", "devops"]
+      },
+      {
+        "title": "Serverless Architecture and How to Migrate?",
+        "slug": "serverless-architecture-and-how-to-migrate",
+        "tags": [
+          "Serverless Architecture",
+          "Cloud Computing",
+          "AWS Lambda",
+          "Serverless Migration Patterns",
+          "Strangler Pattern",
+          "Leapfrog Pattern",
+          "Organic Pattern",
+          "Serverless Deployment",
+          "Serverless Benefits"
+        ]
       }
     ]
   },
