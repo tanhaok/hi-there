@@ -6,6 +6,11 @@
         "title": "Introduction to Java: Understanding the Basics and Core Concepts",
         "slug": "introduction-to-java",
         "tags": ["java", "programming"]
+      },
+      {
+        "title": "What’s New in Java 24 - Key Features and Enhancements",
+        "slug": "whats-new-in-java-24-key-features-and-enhancements",
+        "tags": ["java", "breaking-change", "java-24"]
       }
     ]
   },
