@@ -10,7 +10,7 @@ Java 24 is around the corner, bringing some exciting new features and updates to
 
 ## 1. JEP 472: Prepare to Restrict the Use of JNI*
 
-![JNI](../../assets/image-128.png)
+![JNI](/assets/image-128.png)
 
 JEP 472, titled "Prepare to Restrict the Use of JNI," is part of Java's ongoing effort to enhance security and integrity by limiting unsafe operations, especially those involving the Java Native Interface (JNI). This proposal introduces warnings for any use of JNI in preparation for future releases where JNI access will be restricted by default.
 
@@ -31,10 +31,10 @@ In the fast-evolving world of cloud-based Java deployments, reducing JVM overhea
 To address this, they propose **late barrier expansion**, a method that delays the insertion of G1 barriers until the final stage of C2’s compilation process. This approach significantly reduces overhead while simplifying the work for garbage collector (GC) developers. It builds on the success of ZGC, another Java GC that has used this method since JDK 14.
 
 **Early Barrier Expansion**
-![Early](../../assets/image-126-1024x281.webp)
+![Early](/assets/image-126-1024x281.webp)
 
 **Late Barrier Expansion**
-![Early](../../assets/image-127-1024x281.webp)
+![Early](/assets/image-127-1024x281.webp)
 
 By moving barrier expansion to the end of the pipeline, we can minimize the impact on C2’s compilation process, eliminate unnecessary barriers, and optimize memory access handling. Preliminary experiments show promising results, with nearly the same quality code generated as the current C2 process, but with lower overhead.
 
