@@ -1,6 +1,5 @@
 ---
 title: The Introduction of AWS
-description: Amazon Web Services (AWS) is a comprehensive cloud computing platform that offers a wide range of services to individuals and businesses of all sizes. By leveraging AWS, you can access and utilize computing resources, storage, networking, databases, and more, without the need for significant upfront investment in hardware or infrastructure.
 date: '2024-11-12'
 authors:
     - Hal Nguyen

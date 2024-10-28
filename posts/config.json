@@ -5,11 +5,13 @@
       {
         "title": "Introduction to Java: Understanding the Basics and Core Concepts",
         "slug": "introduction-to-java",
+        "description": "Java is one of the most popular programming languages in the world, known for its versatility, efficiency, and platform independence. Used by millions of developers globally, Java powers everything from mobile applications to large-scale enterprise systems.",
         "tags": ["java", "programming"]
       },
       {
         "title": "What’s New in Java 24 - Key Features and Enhancements",
         "slug": "whats-new-in-java-24-key-features-and-enhancements",
+        "description": "Java 24 is around the corner, bringing some exciting new features and updates to the language and the JVM.",
         "tags": ["java", "breaking-change", "java-24"]
       }
     ]
@@ -20,10 +22,12 @@
       {
         "title": "Introduction to AWS: Understanding the Basics and Core Concepts",
         "slug": "introduction-to-aws",
+        "description": "Amazon Web Services (AWS) is a comprehensive cloud computing platform that offers a wide range of services to individuals and businesses of all sizes. By leveraging AWS, you can access and utilize computing resources, storage, networking, databases, and more, without the need for significant upfront investment in hardware or infrastructure.",
         "tags": ["aws", "cloud", "devops"]
       },
       {
         "title": "Serverless Architecture and How to Migrate?",
+        "description": "A cloud-based approach where developers can build and run applications without managing the underlying infrastructure. Unlike traditional architectures, which require provisioning and maintaining servers or virtual machines, serverless allows developers to focus solely on code, as the cloud provider automatically handles scaling, provisioning, and maintenance.",
         "slug": "serverless-architecture-and-how-to-migrate",
         "tags": [
           "Serverless Architecture",
@@ -45,11 +49,13 @@
       {
         "title": "Introducing Rust - A Systems Programming Language",
         "slug": "introduction-to-rust",
+        "description": "Rust is a modern systems programming language that combines performance, safety, and expressiveness. It's designed to be a safer alternative to languages like C and C++ while maintaining their efficiency. Rust's unique features make it a popular choice for building high-performance applications, operating systems, and embedded systems.",
         "tags": ["rust", "programming", "systems-programming"]
       },
       {
         "title": "A Deeper Dive into Rust Beyond the Basics",
         "slug": "introduction-to-rust-part-2",
+        "description": "Rust's ownership system is one of its most distinctive features. Every value in Rust has an owner, and only one owner at a time. When a value goes out of scope, its owner is dropped, and the value is destroyed. This system helps prevent memory leaks and data races.",
         "tags": ["rust", "programming", "systems-programming"]
       }
     ]
@@ -60,6 +66,7 @@
       {
         "title": "A Beginner's Guide to Go: Essential Concepts",
         "slug": "introduction-to-go",
+        "description": " Go, often referred to as Golang, is a modern programming language developed by Google. Known for its simplicity, efficiency, and concurrency, Go has gained significant popularity in recent years. This blog post will introduce you to the fundamental concepts of Go programming.",
         "tags": ["go", "programming"]
       }
     ]
@@ -70,6 +77,7 @@
       {
         "title": "A Beginner's Guide to Python: Essential Concepts",
         "slug": "introduction-to-python",
+        "description": "A high-level, general-purpose programming language, is renowned for its readability, simplicity, and versatility. It's widely used in various fields, from web development and data science to automation and scientific computing. Let's dive into the fundamental concepts of Python programming.",
         "tags": ["python", "programming"]
       }
     ]

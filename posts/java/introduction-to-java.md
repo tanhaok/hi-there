@@ -1,6 +1,5 @@
 ---
 title: The Introduction of Java
-description: Java is one of the most popular programming languages in the world, known for its versatility, efficiency, and platform independence. Used by millions of developers globally, Java powers everything from mobile applications to large-scale enterprise systems.
 date: '2024-11-11'
 authors:
     - Hal Nguyen

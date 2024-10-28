@@ -3,8 +3,15 @@ export interface PostData {
   title: string;
   date: string;
   contentHtml: string;
-  description: string;
   author: string[];
+  next: {
+    title: string;
+    slug: string;
+  };
+  prev: {
+    title: string;
+    slug: string;
+  };
 }
 
 export interface Params {
