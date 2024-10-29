@@ -13,6 +13,12 @@
         "slug": "whats-new-in-java-24-key-features-and-enhancements",
         "description": "Java 24 is around the corner, bringing some exciting new features and updates to the language and the JVM.",
         "tags": ["java", "breaking-change", "java-24"]
+      },
+      {
+        "title": "List, Set, Map and their implementations in Java",
+        "slug": "list-set-map-and-their-implementations-in-java",
+        "description": "Java provides several interfaces and classes to work with collections of objects. In this post, we'll explore the List, Set, and Map interfaces, along with their common implementations.",
+        "tags": ["java", "collections", "list", "set", "map"]
       }
     ]
   },
