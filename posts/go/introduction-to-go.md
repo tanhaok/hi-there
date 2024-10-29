@@ -1,6 +1,6 @@
 ---
 title: The Introduction of Golang
-date: '2024-11-12'
+date: '2024-10-12'
 authors:
     - Hal Nguyen
 ---

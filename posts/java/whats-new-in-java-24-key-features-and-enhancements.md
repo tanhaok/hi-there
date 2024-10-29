@@ -1,6 +1,6 @@
 ---
 title: What’s New in Java 24 - Key Features and Enhancements
-date: '2024-11-21'
+date: '2024-10-21'
 authors:
     - Hal Nguyen
 next: introduction-to-java

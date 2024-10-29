@@ -1,6 +1,6 @@
 ---
 title: The Introduction of Java
-date: '2024-11-11'
+date: '2024-10-11'
 authors:
     - Hal Nguyen
 ---

@@ -1,6 +1,6 @@
 ---
 title: Serverless Architecture and How to Migrate?
-date: '2024-11-14'
+date: '2024-10-14'
 authors:
     - Hal Nguyen
 ---
