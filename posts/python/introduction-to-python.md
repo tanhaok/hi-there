@@ -1,6 +1,6 @@
 ---
 title: A Beginner's Guide to Python - Essential Concepts
-date: '2024-11-12'
+date: '2024-10-12'
 authors:
     - Hal Nguyen
 ---
