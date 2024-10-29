@@ -1,9 +1,10 @@
 ---
 title: A Deeper Dive into Rust Beyond the Basics
-description: Rust's ownership system is one of its most distinctive features. Every value in Rust has an owner, and only one owner at a time. When a value goes out of scope, its owner is dropped, and the value is destroyed. This system helps prevent memory leaks and data races.
 date: '2024-11-12'
 authors:
     - Hal Nguyen
+next: ''
+prev: 'introduction-to-rust'
 ---
 
 **Ownership and Borrowing**

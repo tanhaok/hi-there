@@ -43,12 +43,22 @@ export async function getPostDataWithContent(
 
   const contentHtml = processedContent.toString();
 
+  const nextPost = getPostMetadata(category, matterResult.data.next);
+  const prevPost = getPostMetadata(category, matterResult.data.prev);
+
   return {
     title: matterResult.data.title,
     date: matterResult.data.date,
-    description: matterResult.data.description,
     author: matterResult.data.authors,
     contentHtml: contentHtml,
+    next: {
+      title: nextPost[0],
+      slug: matterResult.data.next,
+    },
+    prev: {
+      title: prevPost[0],
+      slug: matterResult.data.prev,
+    },
   };
 }
 
@@ -64,7 +74,7 @@ export const getMetadata = (category: string | null): Metadata[] => {
       const matterResult = matter(fileContent);
       results.push({
         title: post.title,
-        description: matterResult.data.description,
+        description: post.description,
         slug: post.slug,
         tag: object.name,
         date: matterResult.data.date,
@@ -78,14 +88,22 @@ export const getMetadata = (category: string | null): Metadata[] => {
   return results;
 };
 
-export function getPostTitle(category: string, slug: string): string[] {
+export function getPostMetadata(category: string, slug: string): string[] {
   const associatedPost = MappingData.find(
     (data) => data.name === category
   )?.posts.find((post) => post.slug === slug);
   if (associatedPost) {
-    return [associatedPost.title, associatedPost.tags.join(",")];
+    return [
+      associatedPost.title,
+      associatedPost.tags.join(","),
+      associatedPost.description,
+    ];
   }
-  return ["Hi There", "A blog post about common topic in web development"];
+  return [
+    "Hi There",
+    "A blog post about common topic in web development",
+    "A blog post about common topic in web development",
+  ];
 }
 
 export function getSupportedCategory(): string[] {

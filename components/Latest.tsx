@@ -1,73 +1,81 @@
-'use client'
-import * as React from 'react';
-import Avatar from '@mui/material/Avatar';
-import AvatarGroup from '@mui/material/AvatarGroup';
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid2';
-import Typography from '@mui/material/Typography';
-import { styled } from '@mui/material/styles';
-import NavigateNextRoundedIcon from '@mui/icons-material/NavigateNextRounded';
-import { Metadata } from '@/lib/type';
-import Link from 'next/link';
+"use client";
+import * as React from "react";
+import Avatar from "@mui/material/Avatar";
+import AvatarGroup from "@mui/material/AvatarGroup";
+import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid2";
+import Typography from "@mui/material/Typography";
+import { styled } from "@mui/material/styles";
+import NavigateNextRoundedIcon from "@mui/icons-material/NavigateNextRounded";
+import { Metadata } from "@/lib/type";
+import Link from "next/link";
+import { Pagination } from "@mui/material";
+
+const PAGE_SIZE = 10;
 
 const StyledTypography = styled(Typography)({
-  display: '-webkit-box',
-  WebkitBoxOrient: 'vertical',
+  display: "-webkit-box",
+  WebkitBoxOrient: "vertical",
   WebkitLineClamp: 2,
-  overflow: 'hidden',
-  textOverflow: 'ellipsis',
+  overflow: "hidden",
+  textOverflow: "ellipsis",
 });
 
 const TitleTypography = styled(Typography)(({ theme }) => ({
-  position: 'relative',
-  textDecoration: 'none',
-  '&:hover': { cursor: 'pointer' },
-  '& .arrow': {
-    visibility: 'hidden',
-    position: 'absolute',
+  position: "relative",
+  textDecoration: "none",
+  "&:hover": { cursor: "pointer" },
+  "& .arrow": {
+    visibility: "hidden",
+    position: "absolute",
     right: 0,
-    top: '50%',
-    transform: 'translateY(-50%)',
+    top: "50%",
+    transform: "translateY(-50%)",
   },
-  '&:hover .arrow': {
-    visibility: 'visible',
+  "&:hover .arrow": {
+    visibility: "visible",
     opacity: 0.7,
   },
-  '&:focus-visible': {
-    outline: '3px solid',
-    outlineColor: 'hsla(210, 98%, 48%, 0.5)',
-    outlineOffset: '3px',
-    borderRadius: '8px',
+  "&:focus-visible": {
+    outline: "3px solid",
+    outlineColor: "hsla(210, 98%, 48%, 0.5)",
+    outlineOffset: "3px",
+    borderRadius: "8px",
   },
-  '&::before': {
+  "&::before": {
     content: '""',
-    position: 'absolute',
+    position: "absolute",
     width: 0,
-    height: '1px',
+    height: "1px",
     bottom: 0,
     left: 0,
     backgroundColor: theme.palette.text.primary,
     opacity: 0.3,
-    transition: 'width 0.3s ease, opacity 0.3s ease',
+    transition: "width 0.3s ease, opacity 0.3s ease",
   },
-  '&:hover::before': {
-    width: '100%',
+  "&:hover::before": {
+    width: "100%",
   },
 }));
 
-function Author({ authors, date }: { authors: string[], date: string }) {
+function Author({ authors, date }: { authors: string[]; date: string }) {
   return (
     <Box
       sx={{
-        display: 'flex',
-        flexDirection: 'row',
+        display: "flex",
+        flexDirection: "row",
         gap: 2,
-        alignItems: 'center',
-        justifyContent: 'space-between',
+        alignItems: "center",
+        justifyContent: "space-between",
       }}
     >
       <Box
-        sx={{ display: 'flex', flexDirection: 'row', gap: 1, alignItems: 'center' }}
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          gap: 1,
+          alignItems: "center",
+        }}
       >
         <AvatarGroup max={3}>
           {authors.map((author, index) => (
@@ -80,7 +88,7 @@ function Author({ authors, date }: { authors: string[], date: string }) {
           ))}
         </AvatarGroup>
         <Typography variant="caption">
-          {authors.map((author) => author).join(', ')}
+          {authors.map((author) => author).join(", ")}
         </Typography>
       </Box>
       <Typography variant="caption">{date}</Typography>
@@ -88,10 +96,27 @@ function Author({ authors, date }: { authors: string[], date: string }) {
   );
 }
 
-export default function Latest({blogMetaData}:{blogMetaData: Metadata[]}) {
+export default function Latest({ blogMetaData }: { blogMetaData: Metadata[] }) {
   const [focusedCardIndex, setFocusedCardIndex] = React.useState<number | null>(
-    null,
+    null
   );
+
+  const [page, setPage] = React.useState(1);
+  const [currentBlogMetaData, setCurrentBlogMetaData] = React.useState<
+    Metadata[]
+  >([]);
+
+  const updateCurrentBlogMetaData = () => {
+    const clonedBlogMetaData = [...blogMetaData];
+    setCurrentBlogMetaData(
+      clonedBlogMetaData.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE)
+    );
+  };
+
+  React.useEffect(() => {
+    updateCurrentBlogMetaData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [page]);
 
   const handleFocus = (index: number) => {
     setFocusedCardIndex(index);
@@ -101,24 +126,33 @@ export default function Latest({blogMetaData}:{blogMetaData: Metadata[]}) {
     setFocusedCardIndex(null);
   };
 
+  const handlePageChange = (
+    event: React.ChangeEvent<unknown>,
+    value: number
+  ) => {
+    setPage(value);
+    updateCurrentBlogMetaData();
+  };
 
   return (
     <div>
       <Typography variant="h2" gutterBottom>
         Latest Posts
       </Typography>
-      <Typography>Stay in the loop with the latest technology trend!</Typography>
+      <Typography>
+        Stay in the loop with the latest technology trend!
+      </Typography>
 
       <Grid container spacing={8} columns={12} sx={{ my: 4 }}>
-        {blogMetaData.map((article, index) => (
+        {currentBlogMetaData.map((article, index) => (
           <Grid key={index} size={{ xs: 12, sm: 6 }}>
             <Box
               sx={{
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'space-between',
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
                 gap: 1,
-                height: '100%',
+                height: "100%",
               }}
             >
               <Typography gutterBottom variant="caption" component="div">
@@ -130,18 +164,22 @@ export default function Latest({blogMetaData}:{blogMetaData: Metadata[]}) {
                 onFocus={() => handleFocus(index)}
                 onBlur={handleBlur}
                 tabIndex={0}
-                className={focusedCardIndex === index ? 'Mui-focused' : ''}
+                className={focusedCardIndex === index ? "Mui-focused" : ""}
               >
-                <Link href={`/blogs/${article.tag}/${article.slug}`} > 
-                {article.title}
-                 </Link>
-                
+                <Link href={`/blogs/${article.tag}/${article.slug}`}>
+                  {article.title}
+                </Link>
+
                 <NavigateNextRoundedIcon
                   className="arrow"
-                  sx={{ fontSize: '1rem' }}
+                  sx={{ fontSize: "1rem" }}
                 />
               </TitleTypography>
-              <StyledTypography variant="body2" color="text.secondary" gutterBottom>
+              <StyledTypography
+                variant="body2"
+                color="text.secondary"
+                gutterBottom
+              >
                 {article.description}
               </StyledTypography>
 
@@ -151,10 +189,18 @@ export default function Latest({blogMetaData}:{blogMetaData: Metadata[]}) {
         ))}
       </Grid>
 
-      {/* TODO: will be handle later */}
-      {/* <Box sx={{ display: 'flex', flexDirection: 'row', pt: 4 }}>
-        <Pagination hidePrevButton hideNextButton count={10} boundaryCount={10} />
-      </Box> */}
+      {blogMetaData.length > PAGE_SIZE && (
+        <Box sx={{ display: "flex", flexDirection: "row", pt: 4 }}>
+          <Pagination
+            onChange={handlePageChange}
+            hidePrevButton
+            hideNextButton
+            count={Math.ceil(blogMetaData.length / PAGE_SIZE)}
+            boundaryCount={Math.ceil(blogMetaData.length / PAGE_SIZE)}
+            page={page}
+          />
+        </Box>
+      )}
     </div>
   );
 }
