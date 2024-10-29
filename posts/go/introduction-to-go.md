@@ -1,7 +1,6 @@
 ---
 title: The Introduction of Golang
-description: Go, often referred to as Golang, is a modern programming language developed by Google. Known for its simplicity, efficiency, and concurrency, Go has gained significant popularity in recent years. This blog post will introduce you to the fundamental concepts of Go programming.
-date: '2024-11-12'
+date: '2024-10-12'
 authors:
     - Hal Nguyen
 ---

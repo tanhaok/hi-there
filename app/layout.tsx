@@ -1,17 +1,10 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import CssBaseline from "@mui/material/CssBaseline";
 import Container from "@mui/material/Container";
 import Footer from "@components/Footer";
 import TemplateFrame from "./TemplateFrame";
 import { getSupportedCategory } from "@/lib/posts";
 import "./styles.css";
-
-const inter = localFont({
-  src: "./fonts/Inter_28pt-Thin.ttf",
-  variable: "--font-inter",
-  weight: "100 900",
-});
 
 export const metadata: Metadata = {
   title: "Hi There",
@@ -27,7 +20,12 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${inter.variable}`}>
+      <head>
+        <style>
+          @import url(`https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap`);
+        </style>
+      </head>
+      <body >
         <TemplateFrame supportedCategory={supportedCategory}>
           <CssBaseline enableColorScheme />
           <Container
