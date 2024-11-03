@@ -175,24 +175,15 @@ Let's answer some simple questions about these topic:
     - Set: HashSet
     - Map: HashMap
 
-## Order question to answer
+#### Order question to answer
 
-### 3. ***What is the difference between an ArrayList and a LinkedList? When would you use one over the other?***
-
-### 4. ***How does a HashSet ensure uniqueness of elements?***
-
-### 5. ***What is the time complexity of common operations (add, remove, search) for ArrayList, LinkedList, HashSet, and HashMap?***
-
-### 6. ***Explain the concept of hashing and how it's used in HashMaps***
-
-### 7. ***What is the difference between a HashMap and a TreeMap? When would you use one over the other?***
-
-### 8. ***Explain the concept of fail-fast iterators***
-
-### 9. ***What is the difference between a ConcurrentHashMap and a Hashtable?***
-
-### 10. ***How would you implement a custom hash function for a HashMap?***
-
-### 11. ***What is the difference between a WeakHashMap and a SoftReference?***
-
-### 12. ***How would you implement a thread-safe HashMap?***
+- ***What is the difference between an ArrayList and a LinkedList? When would you use one over the other?***
+- ***How does a HashSet ensure uniqueness of elements?***
+- ***What is the time complexity of common operations (add, remove, search) for ArrayList, LinkedList, HashSet, and HashMap?***
+- ***Explain the concept of hashing and how it's used in HashMaps***
+- ***What is the difference between a HashMap and a TreeMap? When would you use one over the other?***
+- ***Explain the concept of fail-fast iterators***
+- ***What is the difference between a ConcurrentHashMap and a Hashtable?***
+- ***How would you implement a custom hash function for a HashMap?***
+- ***What is the difference between a WeakHashMap and a SoftReference?***
+- ***How would you implement a thread-safe HashMap?***
