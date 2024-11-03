@@ -175,6 +175,8 @@ Let's answer some simple questions about these topic:
     - Set: HashSet
     - Map: HashMap
 
+## Order question to answer
+
 ### 3. ***What is the difference between an ArrayList and a LinkedList? When would you use one over the other?***
 
 ### 4. ***How does a HashSet ensure uniqueness of elements?***
