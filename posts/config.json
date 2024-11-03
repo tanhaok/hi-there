@@ -9,10 +9,22 @@
         "tags": ["java", "programming"]
       },
       {
+        "title": "Breaking changes: Java 17",
+        "slug": "breaking-changes-java-17",
+        "description": "Java 17 is the latest long-term support (LTS) release of the language, bringing several new features and enhancements to the platform. In this post, we'll explore some of the key additions in Java 17 and how they can benefit developers.",
+        "tags": ["java", "programming", "java-17"]
+      },
+      {
         "title": "What’s New in Java 24 - Key Features and Enhancements",
         "slug": "whats-new-in-java-24-key-features-and-enhancements",
         "description": "Java 24 is around the corner, bringing some exciting new features and updates to the language and the JVM.",
         "tags": ["java", "breaking-change", "java-24"]
+      },
+      {
+        "title": "List, Set, Map and their implementations in Java",
+        "slug": "list-set-map-and-their-implementations-in-java",
+        "description": "Java provides several interfaces and classes to work with collections of objects. In this post, we'll explore the List, Set, and Map interfaces, along with their common implementations.",
+        "tags": ["java", "collections", "list", "set", "map"]
       }
     ]
   },
