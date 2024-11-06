@@ -25,6 +25,12 @@
         "slug": "list-set-map-and-their-implementations-in-java",
         "description": "Java provides several interfaces and classes to work with collections of objects. In this post, we'll explore the List, Set, and Map interfaces, along with their common implementations.",
         "tags": ["java", "collections", "list", "set", "map"]
+      },
+      {
+        "title": "What different between HashMap and LinkedHashMap",
+        "slug": "what-different-between-hashmap-and-linkedhashmap",
+        "description": "Java Streams provide a powerful way to process collections of objects in a functional style. In this post, we'll explore the key concepts of Java Streams and how to use them effectively in your applications.",
+        "tags": ["java", "streams", "HashMap", "LinkedHashMap", "Map"]
       }
     ]
   },
