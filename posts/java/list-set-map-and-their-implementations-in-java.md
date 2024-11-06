@@ -1,6 +1,6 @@
 ---
 title: List Set Map and their implementation in Java
-date: '2024-11-06'
+date: '2024-10-29'
 authors:
     - Hal Nguyen
 next: what-different-between-hashmap-and-linkedhashmap

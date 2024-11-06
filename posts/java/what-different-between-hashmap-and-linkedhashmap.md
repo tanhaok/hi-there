@@ -1,6 +1,6 @@
 ---
 title: What different between HashMap and LinkedHashMap
-date: '2024-10-29'
+date: '2024-11-06'
 authors:
     - Hal Nguyen
 prev: list-set-map-and-their-implementations-in-java
