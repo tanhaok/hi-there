@@ -47,7 +47,7 @@ def new():
         template = """---
         title: {title}
         slug: {slug}
-        date: {date}
+        date: '{date}'
         authors: 
             - {author}
         prev: {prev}
