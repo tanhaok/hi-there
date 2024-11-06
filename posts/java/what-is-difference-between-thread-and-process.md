@@ -10,7 +10,7 @@ next: how-to-create-threads-in-java
 ## Introduction
 
 Let's start by looking at the image below:
-![Thread vs Process]('./assets/thread-and-process.webp')
+![Thread vs Process](./assets/thread-and-process.webp)
 
 As we can see, Thread and Process are two basic component in OS. Process is the program under execution, while Thread is the smallest unit of execution in a process.
 
@@ -22,7 +22,7 @@ As we can see, Thread and Process are two basic component in OS. Process is the 
 - The process takes more time to terminate, and it is isolated from other processes. In other words, the process does not share memory with other processes.
 - The process has 6 states: New, Ready, Running, Waiting, Terminated, and Suspended. See image below:
 
-![Process State]('./assets/process-state.webp')
+![Process State](./assets/process-state.webp)
 
 ## Thread
 
@@ -30,12 +30,12 @@ As we can see, Thread and Process are two basic component in OS. Process is the 
 - Thread is not isolated from other threads, it mean thread can shares memory with other threads.
 - A thread has 3 states: Running, Ready, and Blocked. See image below:
 
-![Thread State]('./assets/thread-state.webp')
+![Thread State](./assets/thread-state.webp)
 
 ## How Thread and Process work together
 
 - Let's look at the image below to understand how Thread and Process work together:
-![Thread and Process]('./assets/thread-process-relation.webp')
+![Thread and Process](./assets/thread-process-relation.webp)
 
 - Explain:
   - First, the process is created by the operating system.
