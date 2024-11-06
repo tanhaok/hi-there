@@ -15,7 +15,7 @@
         "tags": ["java", "programming", "java-17"]
       },
       {
-        "title": "What’s New in Java 24 - Key Features and Enhancements",
+        "title": "What\u2019s New in Java 24 - Key Features and Enhancements",
         "slug": "whats-new-in-java-24-key-features-and-enhancements",
         "description": "Java 24 is around the corner, bringing some exciting new features and updates to the language and the JVM.",
         "tags": ["java", "breaking-change", "java-24"]
@@ -28,9 +28,21 @@
       },
       {
         "title": "What different between HashMap and LinkedHashMap",
-        "slug": "what-different-between-hashmap-and-linkedhashmap",
-        "description": "Java Streams provide a powerful way to process collections of objects in a functional style. In this post, we'll explore the key concepts of Java Streams and how to use them effectively in your applications.",
+        "slug": "what-is-difference-between-hashmap-and-linkedhashmap",
+        "description": "",
         "tags": ["java", "streams", "HashMap", "LinkedHashMap", "Map"]
+      },
+      {
+        "title": "What is difference between Thread and Process",
+        "slug": "what-is-difference-between-thread-and-process",
+        "description": "Understand the differences between threads and processes in operating systems. This guide covers definitions, states, memory usage, resource allocation, synchronization needs, and more, offering a clear comparison for developers and students. Learn how threads and processes work together to optimize program execution and system performance.",
+        "tags": ["java", "concurrency", "thread", "process"]
+      },
+      {
+        "title": "How to create threads in Java",
+        "slug": "how-to-create-threads-in-java",
+        "tags": ["Thread", "Runable", "Callable", "ExecutorService", "Future"],
+        "description": ""
       }
     ]
   },

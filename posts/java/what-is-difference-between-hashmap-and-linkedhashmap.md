@@ -1,5 +1,5 @@
 ---
-title: What different between HashMap and LinkedHashMap
+title: What is difference between HashMap and LinkedHashMap
 date: '2024-11-06'
 authors:
     - Hal Nguyen
