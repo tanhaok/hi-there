@@ -20,9 +20,13 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      {/* <head>
-      <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet" />
-      </head> */}
+      <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4284950481215978"
+          crossorigin="anonymous"
+        ></script>
+      </head>
       <body>
         <TemplateFrame supportedCategory={supportedCategory}>
           <CssBaseline enableColorScheme />
