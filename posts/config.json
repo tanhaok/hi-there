@@ -29,7 +29,7 @@
       {
         "title": "What different between HashMap and LinkedHashMap",
         "slug": "what-is-difference-between-hashmap-and-linkedhashmap",
-        "description": "",
+        "description": "This blog post provides a comprehensive comparison of Java's HashMap and LinkedHashMap, two essential Map interface implementations in the Java Collection framework. Learn the key differences, advantages, and use cases of HashMap and LinkedHashMap, along with practical examples and performance insights. Perfect for developers seeking to optimize Java applications by choosing the right data structure for managing key-value pairs effectively.",
         "tags": ["java", "streams", "HashMap", "LinkedHashMap", "Map"]
       },
       {
