@@ -48,7 +48,7 @@ def new():
         title: {title}
         slug: {slug}
         date: {date}
-        author: 
+        authors: 
             - {author}
         prev: {prev}
         next: {next}
