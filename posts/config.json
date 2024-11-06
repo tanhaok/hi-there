@@ -41,8 +41,8 @@
       {
         "title": "How to create threads in Java",
         "slug": "how-to-create-threads-in-java",
-        "tags": ["Thread", "Runable", "Callable", "ExecutorService", "Future"],
-        "description": ""
+        "tags": ["Thread", "Runable", "Callable", "ExecutorService", "Future", "CompletableFuture"],
+        "description": "Creating and managing threads is crucial for building efficient and responsive applications."
       }
     ]
   },

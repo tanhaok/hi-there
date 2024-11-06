@@ -34,3 +34,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+/demo/java/.idea/** 
+/demo/java/out/**
+/demo/java/demo.iml
