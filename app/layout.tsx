@@ -20,12 +20,10 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <head>
-        <style>
-          @import url(`https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap`);
-        </style>
-      </head>
-      <body >
+      {/* <head>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet" />
+      </head> */}
+      <body>
         <TemplateFrame supportedCategory={supportedCategory}>
           <CssBaseline enableColorScheme />
           <Container
