@@ -9,7 +9,7 @@ next:
 
 Let's explore the Map hierarchy and its implementations.
 
-![Map Hierarchy](./assets/Java-Hierarchy.webp)
+![Map Hierarchy](/assets/Java-Hierarchy.webp)
 
 In a [previous post](https://hi-there.me/blogs/java/list-set-map-and-their-implementations-in-java), I provided an overview of **Map**. In this article, we’ll take a closer look at HashMap and LinkedHashMap, comparing their features and behaviors.
 
