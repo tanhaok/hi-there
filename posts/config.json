@@ -78,6 +78,15 @@
           "CompletableFuture"
         ],
         "description": "Creating and managing threads is crucial for building efficient and responsive applications."
+      },
+      {
+        "title": "OOP in Java",
+        "slug": "oop-in-java",
+        "tags": [
+          "OOP",
+          "Java"
+        ],
+        "description": "This post will introduce OOP concepts and illustrate how they are applied in Java, one of the most popular OOP languages."
       }
     ]
   },
@@ -157,7 +166,7 @@
           "Go",
           "LIFO"
         ],
-        "description": "defer is one of those small but powerful tools that really enhances Go’s efficiency and readability. This keyword help manage resources and optimize program performance. Let’s dive into the defer keyword in Go and explore its use cases."
+        "description": "defer is one of those small but powerful tools that really enhances Go\u2019s efficiency and readability. This keyword help manage resources and optimize program performance. Let\u2019s dive into the defer keyword in Go and explore its use cases."
       }
     ]
   },
