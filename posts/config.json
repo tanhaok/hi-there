@@ -87,6 +87,16 @@
           "Java"
         ],
         "description": "This post will introduce OOP concepts and illustrate how they are applied in Java, one of the most popular OOP languages."
+      },
+      {
+        "title": "JDBC Basics, Connection Pooling, and ORM Frameworks: A Comprehensive Guide",
+        "slug": "jdbc-basics-connection-pooling-and-orm-frameworks-a-comprehensive-guide",
+        "tags": [
+          "JDBC",
+          "Connection Pooling",
+          " ORM"
+        ],
+        "description": "By understanding and leveraging these tools appropriately, developers can build scalable, efficient, and maintainable database-driven applications in Java."
       }
     ]
   },
