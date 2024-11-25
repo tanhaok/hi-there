@@ -13,7 +13,7 @@ def getSlug(s: str) -> str:
 
 def new():
     category = input("Enter category: ")
-    if category not in ['aws', 'go', 'java', 'python', 'rust']:
+    if category not in ['aws', 'go', 'java', 'python', 'rust', 'others']:
         print("Category Not Supported")
         return
 
