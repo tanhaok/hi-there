@@ -193,5 +193,21 @@
         ]
       }
     ]
+  },
+  {
+    "name": "others",
+    "posts": [
+      {
+        "title": "What is the difference between Postgres DB and other database",
+        "slug": "what-is-the-difference-between-postgres-db-and-other-database",
+        "tags": [
+          "database",
+          "postgres",
+          "sql",
+          "web"
+        ],
+        "description": "PostgreSQL (often referred to as Postgres) is a powerful, open-source relational database management system (RDBMS). It stands out from other databases due to its features, design philosophy, and use cases."
+      }
+    ]
   }
 ]
