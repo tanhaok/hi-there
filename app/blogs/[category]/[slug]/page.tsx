@@ -75,17 +75,19 @@ export default async function Post({ params }: Params) {
         <Box sx={{ display: "flex", justifyContent: "center" }}>
           <Typography
             variant="h2"
-            sx={{ fontStyle: "oblique", marginTop: "2rem" }}
+            sx={{ fontStyle: "oblique", marginTop: "2rem", marginBottom: "2rem" }}
           >
             {postData.title}
           </Typography>
         </Box>
 
-        <Box sx={{ display: "flex", justifyContent: "right" }}>
+        {/* <Box sx={{ display: "flex", justifyContent: "right" }}>
           <Typography variant="subtitle2" sx={{ fontStyle: "italic" }}>
             {postData.author} - {postData.date}
           </Typography>
-        </Box>
+        </Box> */}
+
+      <Divider  />
 
         <ShowBlogContent content={postData.contentHtml} />
 
