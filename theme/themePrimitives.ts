@@ -178,7 +178,7 @@ export const getDesignTokens = (mode: PaletteMode) => {
       },
     },
     typography: {
-      fontFamily: ['"Inter", "sans-serif"'].join(','),
+      fontFamily: ['"Open Sans","Helvetica Neue","sans-serif"'].join(','),
       h1: {
         fontSize: defaultTheme.typography.pxToRem(48),
         fontWeight: 600,
@@ -214,13 +214,13 @@ export const getDesignTokens = (mode: PaletteMode) => {
         fontSize: defaultTheme.typography.pxToRem(14),
         fontWeight: 500,
       },
-      body1: {
-        fontSize: defaultTheme.typography.pxToRem(14),
-      },
-      body2: {
-        fontSize: defaultTheme.typography.pxToRem(14),
-        fontWeight: 400,
-      },
+      // body1: {
+      //   fontSize: defaultTheme.typography.pxToRem(14),
+      // },
+      // body2: {
+      //   fontSize: defaultTheme.typography.pxToRem(14),
+      //   fontWeight: 400,
+      // },
       caption: {
         fontSize: defaultTheme.typography.pxToRem(12),
         fontWeight: 400,

@@ -1,7 +1,5 @@
 "use client";
 import * as React from "react";
-import Avatar from "@mui/material/Avatar";
-import AvatarGroup from "@mui/material/AvatarGroup";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid2";
 import Typography from "@mui/material/Typography";
@@ -58,43 +56,43 @@ const TitleTypography = styled(Typography)(({ theme }) => ({
   },
 }));
 
-function Author({ authors, date }: { authors: string[]; date: string }) {
-  return (
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: "row",
-        gap: 2,
-        alignItems: "center",
-        justifyContent: "space-between",
-      }}
-    >
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "row",
-          gap: 1,
-          alignItems: "center",
-        }}
-      >
-        <AvatarGroup max={3}>
-          {authors.map((author, index) => (
-            <Avatar
-              key={index}
-              alt={author}
-              src={author}
-              sx={{ width: 24, height: 24 }}
-            />
-          ))}
-        </AvatarGroup>
-        <Typography variant="caption">
-          {authors.map((author) => author).join(", ")}
-        </Typography>
-      </Box>
-      <Typography variant="caption">{date}</Typography>
-    </Box>
-  );
-}
+// function Author({ authors, date }: { authors: string[]; date: string }) {
+//   return (
+//     <Box
+//       sx={{
+//         display: "flex",
+//         flexDirection: "row",
+//         gap: 2,
+//         alignItems: "center",
+//         justifyContent: "space-between",
+//       }}
+//     >
+//       <Box
+//         sx={{
+//           display: "flex",
+//           flexDirection: "row",
+//           gap: 1,
+//           alignItems: "center",
+//         }}
+//       >
+//         <AvatarGroup max={3}>
+//           {authors.map((author, index) => (
+//             <Avatar
+//               key={index}
+//               alt={author}
+//               src={author}
+//               sx={{ width: 24, height: 24 }}
+//             />
+//           ))}
+//         </AvatarGroup>
+//         <Typography variant="caption">
+//           {authors.map((author) => author).join(", ")}
+//         </Typography>
+//       </Box>
+//       <Typography variant="caption">{date}</Typography>
+//     </Box>
+//   );
+// }
 
 export default function Latest({ blogMetaData }: { blogMetaData: Metadata[] }) {
   const [focusedCardIndex, setFocusedCardIndex] = React.useState<number | null>(
@@ -183,7 +181,7 @@ export default function Latest({ blogMetaData }: { blogMetaData: Metadata[] }) {
                 {article.description}
               </StyledTypography>
 
-              <Author authors={article.authors} date={article.date} />
+              {/* <Author authors={article.authors} date={article.date} /> */}
             </Box>
           </Grid>
         ))}
