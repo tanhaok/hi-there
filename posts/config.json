@@ -209,5 +209,21 @@
         "description": "PostgreSQL (often referred to as Postgres) is a powerful, open-source relational database management system (RDBMS). It stands out from other databases due to its features, design philosophy, and use cases."
       }
     ]
+  },
+  {
+    "name": "spring",
+    "posts": [
+      {
+        "title": "Dependency Injection and Inversion of Control",
+        "slug": "dependency-injection-and-inversion-of-control",
+        "tags": [
+          "Dependency Injectio",
+          "DI",
+          "Inversion of Control",
+          "IoC"
+        ],
+        "description": ""
+      }
+    ]
   }
 ]

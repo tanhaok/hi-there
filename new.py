@@ -13,7 +13,7 @@ def getSlug(s: str) -> str:
 
 def new():
     category = input("Enter category: ")
-    if category not in ['aws', 'go', 'java', 'python', 'rust', 'others']:
+    if category not in ['aws', 'go', 'java', "spring", 'python', 'rust', 'others']:
         print("Category Not Supported")
         return
 
@@ -22,6 +22,10 @@ def new():
     author = input("Enter author: ")
     prev = input("Enter previous post slug: ")
     next = input("Enter next post slug: ")
+
+    if title is None:
+        print("Title is required.")
+        exit(1)
 
     to_day = date.today()
 
@@ -36,7 +40,7 @@ def new():
     config_data[idx]['posts'].append({
         "title": title,
         "slug": slug,
-        "tags": tag.split(","),
+        "tags": tag.split(",").trim(),
         "description": ""
     })
 
