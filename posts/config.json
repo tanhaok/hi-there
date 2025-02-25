@@ -97,6 +97,16 @@
           " ORM"
         ],
         "description": "By understanding and leveraging these tools appropriately, developers can build scalable, efficient, and maintainable database-driven applications in Java."
+      },
+      {
+        "title": "Design Pattern in Java - Singleton",
+        "slug": "design-pattern-in-java-singleton",
+        "tags": [
+          "singleton",
+          "design pattern",
+          "java"
+        ],
+        "description": "This post explores the Singleton pattern in Java, explaining its purpose, benefits, and various implementation methods. It also covers best practices to ensure efficient, thread-safe, and maintainable Singleton usage in real-world applications."
       }
     ]
   },
