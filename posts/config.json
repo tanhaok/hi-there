@@ -111,6 +111,21 @@
     ]
   },
   {
+    "name": "spring",
+    "posts": [
+      {
+        "title": "Spring Boot Auto-Configuration Explained: From Basics to Customization",
+        "slug": "spring-boot-auto-configuration-explained-from-basics-to-customization",
+        "tags": [
+          "spring-boot",
+          "auto configuration",
+          "spring"
+        ],
+        "description": "Have you been working with Spring Boot for a long time? Have you ever wondered what sets it apart from traditional Spring?"
+      }
+    ]
+  },
+  {
     "name": "aws",
     "posts": [
       {
