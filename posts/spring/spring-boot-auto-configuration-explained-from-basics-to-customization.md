@@ -1,5 +1,5 @@
 ---
-title: Spring Boot Auto-Configuration Explained: From Basics to Customization
+title: Spring Boot Auto-Configuration Explained From Basics to Customization
 slug: spring-boot-auto-configuration-explained-from-basics-to-customization
 date: '2025-02-26'
 authors: 
@@ -8,7 +8,7 @@ prev:
 next: 
 ---
 
-Have you been working with Spring Boot for a long time? Have you ever wondered what sets it apart from traditional Spring? In this post, we’ll dive deep into how Spring Boot auto-configuration works, why it matters, and how you can customize it to better fit your application’s needs.
+*Have you been working with Spring Boot for a long time? Have you ever wondered what sets it apart from traditional Spring? In this post, we’ll dive deep into how Spring Boot auto-configuration works, why it matters, and how you can customize it to better fit your application’s needs.*
 
 ## 1. Introduction
 
